@@ -1,0 +1,313 @@
+<gate.util.persistence.GateApplication>
+  <urlList class="gate.util.persistence.CollectionPersistence">
+    <localList>
+      <gate.creole.Plugin-Maven>
+        <group>uk.ac.gate.plugins</group>
+        <artifact>annie</artifact>
+        <version>8.5-SNAPSHOT</version>
+      </gate.creole.Plugin-Maven>
+      <gate.creole.Plugin-Maven>
+        <group>uk.ac.gate.plugins</group>
+        <artifact>gazetteer-lkb</artifact>
+        <version>8.5-SNAPSHOT</version>
+      </gate.creole.Plugin-Maven>
+    </localList>
+    <collectionType>java.util.ArrayList</collectionType>
+  </urlList>
+  <application class="gate.util.persistence.SerialAnalyserControllerPersistence">
+    <corpus class="gate.util.persistence.CorpusPersistence">
+      <docList>
+        <gate.util.persistence.LRPersistence>
+          <resourceType>gate.corpora.DocumentImpl</resourceType>
+          <resourceName>Wikipedia - Natural_language_processing</resourceName>
+          <initParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>markupAware</string>
+                <boolean>true</boolean>
+              </entry>
+              <entry>
+                <string>encoding</string>
+                <string>UTF-8</string>
+              </entry>
+              <entry>
+                <string>sourceUrlStartOffset</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>preserveOriginalContent</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>collectRepositioningInfo</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>sourceUrl</string>
+                <gate.util.persistence.PersistenceManager-URLHolder>
+                  <urlString>https://en.wikipedia.org/wiki/Natural_language_processing</urlString>
+                </gate.util.persistence.PersistenceManager-URLHolder>
+              </entry>
+              <entry>
+                <string>mimeType</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>sourceUrlEndOffset</string>
+                <null/>
+              </entry>
+            </localMap>
+          </initParams>
+        </gate.util.persistence.LRPersistence>
+        <gate.util.persistence.LRPersistence>
+          <resourceType>gate.corpora.DocumentImpl</resourceType>
+          <resourceName>Wikipedia: GATE</resourceName>
+          <initParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>markupAware</string>
+                <boolean>true</boolean>
+              </entry>
+              <entry>
+                <string>stringContent</string>
+                <string>General Architecture for Text Engineering - Wikipedia, the free encyclopedia
+
+General Architecture for Text Engineering
+From Wikipedia, the free encyclopedia
+Jump to: navigation , search
+This article may not meet the general notability guideline . Please help to establish notability by adding reliable, secondary sources about the topic. If notability cannot be established, the article is likely to be merged or deleted . ( October 2009 )
+GATE
+GATE 5 main window
+Developer(s) GATE research team , Dept. Computer Science, University of Sheffield
+Initial release 1996
+Stable release 5.0 � ( 2007 - 05-29 ) [ +/− ]
+Preview release 5.1 � (nigthly builds released everyday) [ +/− ]
+Written in Java
+Operating system Cross-platform
+Available in English
+Type Text mining Information Extraction
+License LGPL
+Website http://gate.ac.uk/
+
+General Architecture for Text Engineering or GATE is a Java software toolkit originally developed at the University of Sheffield beginning in 1995 and now used worldwide by a wide community of scientists, companies, teachers and students for all sorts of natural language processing tasks, including information extraction in many languages.
+
+GATE comprises an architecture, a free open source API, framework and graphical development environment.
+
+GATE community and research is involved in several European research projects including TAO and SEKT .
+Contents
+1 Features
+2 Description of the graphical user interface
+3 References
+4 See also
+
+[ edit ] Features
+
+GATE includes an information extraction system called ANNIE (A Nearly-New Information Extraction System) which is a set of modules comprising a tokenizer , a gazetteer , a sentence splitter , a part of speech tagger , a named entities transducer and a coreference tagger.
+
+Languages currently handled in GATE include English, Spanish, Chinese, Arabic, French, German, Hindi, Italian, Cebuano, Romanian, Russian.
+
+There is a large set of plugins for machine learning with Weka , RASP, MAXENT, SVM Light, for managing Ontologies like WordNet , for querying search engines like Google or Yahoo , for part of speech tagging with Brill or TreeTager, and many more.
+
+GATE can handle input in various formats, such as TXT , HTML , XML , Doc , PDF documents, and Java Serial , PostgreSQL , Lucene , Oracle Databases with help of RDBMS storage over JDBC .
+
+It also uses the JAPE (Java Annotation Patterns Engine) language for building rules in order to annotate documents with tags. A debugger, corpus benchmark and annotations comparator tools are also present.
+[ edit ] Description of the graphical user interface
+GATE 5 main window.
+
+The GATE main GUI consist of a top menu and row of icons, a left vertical resources tree, a central-right tabbed pane of the resource viewers and a message field at the bottom.
+
+The resources tree and the menu are use to load, save and run resources. The resources tree display the loaded resources and allows to show a resource in a resource viewer by double-clicking on it or pressing Enter key.
+
+Each loaded resource can be displayed in a specific resource viewer that take most of the space in the GUI.
+
+Here you can see the document viewer use to display a document and its annotations. In pink are &lt;A&gt; hyperlink annotations from an HTML file. The right list is the annotation sets list and the bottom table is the annotation list. In the center is the annotation editor window.
+[ edit ] References
+GATE website at University of Sheffield Natural Language Processing Group
+[ edit ] See also
+Free software portal
+Unstructured Information Management Architecture (UIMA)
+Retrieved from &quot; http://en.wikipedia.org/wiki/General_Architecture_for_Text_Engineering &quot;
+Categories : SourceForge projects | Natural language processing toolkits | Free development toolkits and libraries | Free science software | Free software programmed in Java | Open source integrated development environments | Free cross-platform software | Knowledge representation | Machine learning | Natural language processing | Data mining | Ontology (computer science) | Ontology editors
+Hidden categories: Articles with topics of unclear notability from October 2009
+Views
+Article
+Discussion
+Edit this page
+History
+Personal tools
+Try Beta
+Log in / create account
+Navigation
+Main page
+Contents
+Featured content
+Current events
+Random article
+Search
+�
+Interaction
+About Wikipedia
+Community portal
+Recent changes
+Contact Wikipedia
+Donate to Wikipedia
+Help
+Toolbox
+What links here
+Related changes
+Upload file
+Special pages
+Printable version
+Permanent link
+Cite this page
+This page was last modified on 11 October 2009 at 04:08.
+Text is available under the Creative Commons Attribution-ShareAlike License ; additional terms may apply. See Terms of Use for details.
+Wikipedia� is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization.
+Privacy policy
+About Wikipedia
+Disclaimers
+</string>
+              </entry>
+              <entry>
+                <string>encoding</string>
+                <string>windows-1251</string>
+              </entry>
+              <entry>
+                <string>sourceUrlStartOffset</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>preserveOriginalContent</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>collectRepositioningInfo</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>sourceUrl</string>
+                <gate.util.persistence.PersistenceManager-URLHolder>
+                  <urlString>http://en.wikipedia.org/wiki/General_Architecture_for_Text_Engineering</urlString>
+                </gate.util.persistence.PersistenceManager-URLHolder>
+              </entry>
+              <entry>
+                <string>mimeType</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>sourceUrlEndOffset</string>
+                <null/>
+              </entry>
+            </localMap>
+          </initParams>
+        </gate.util.persistence.LRPersistence>
+      </docList>
+      <resourceType>gate.corpora.CorpusImpl</resourceType>
+      <resourceName>Small Corpus</resourceName>
+      <initParams class="gate.util.persistence.MapPersistence">
+        <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+        <localMap>
+          <entry>
+            <string>documentsList</string>
+            <gate.util.persistence.CollectionPersistence>
+              <localList>
+                <gate.util.persistence.LRPersistence reference="../../../../../../docList/gate.util.persistence.LRPersistence"/>
+              </localList>
+              <collectionType>java.util.ArrayList</collectionType>
+            </gate.util.persistence.CollectionPersistence>
+          </entry>
+        </localMap>
+      </initParams>
+    </corpus>
+    <prList class="gate.util.persistence.CollectionPersistence">
+      <localList>
+        <gate.util.persistence.PRPersistence>
+          <runtimeParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>setsToKeep</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>document</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>annotationTypes</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>keepOriginalMarkupsAS</string>
+                <boolean>true</boolean>
+              </entry>
+            </localMap>
+          </runtimeParams>
+          <resourceType>gate.creole.annotdelete.AnnotationDeletePR</resourceType>
+          <resourceName>Document Reset</resourceName>
+          <initParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap/>
+          </initParams>
+          <features class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap/>
+          </features>
+        </gate.util.persistence.PRPersistence>
+        <gate.util.persistence.LanguageAnalyserPersistence>
+          <runtimeParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>annotationSetName</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>annotationLimit</string>
+                <int>0</int>
+              </entry>
+              <entry>
+                <string>document</string>
+                <null/>
+              </entry>
+            </localMap>
+          </runtimeParams>
+          <resourceType>com.ontotext.kim.gate.KimGazetteer</resourceType>
+          <resourceName>Small Ontology Gazetteer</resourceName>
+          <initParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>forceCaseSensitive</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>dictionaryPath</string>
+                <gate.util.persistence.PersistenceManager-URLHolder>
+                  <urlString>$relpath$../dictionary_from_local_ontology</urlString>
+                </gate.util.persistence.PersistenceManager-URLHolder>
+              </entry>
+            </localMap>
+          </initParams>
+          <features class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap/>
+          </features>
+        </gate.util.persistence.LanguageAnalyserPersistence>
+      </localList>
+      <collectionType>java.util.ArrayList</collectionType>
+    </prList>
+    <resourceType>gate.creole.SerialAnalyserController</resourceType>
+    <resourceName>Sample Pipeline</resourceName>
+    <initParams class="gate.util.persistence.MapPersistence">
+      <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+      <localMap/>
+    </initParams>
+    <features class="gate.util.persistence.MapPersistence">
+      <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+      <localMap/>
+    </features>
+  </application>
+</gate.util.persistence.GateApplication>
