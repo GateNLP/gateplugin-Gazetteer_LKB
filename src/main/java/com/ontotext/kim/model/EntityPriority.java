@@ -28,8 +28,6 @@ public class EntityPriority implements KIMConstants {
 
     /**
      * read the config file
-     * 
-     * @throws Exception
      */
     public EntityPriority() {
         m_hClassPrio = new HashMap<String,Integer>(50);
@@ -126,7 +124,6 @@ public class EntityPriority implements KIMConstants {
      * @param sLongURI
      *            an URI
      * @return the localname of the URI
-     * @throws KIMException
      */
     public static String stripNameSpace(String sLongURI) {
         String result;

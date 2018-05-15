@@ -110,10 +110,8 @@ public class AliasCacheImpl implements AliasLookupDictionary {
 
   /**
    * A static method for generation/access to the one and only instance
-   * of the alias cache
-   * @param dictionaryPath 
-   * @return - the instance of the cache
-   * @throws ResourceInstantiationException
+   * of the alias cache 
+   * @return the instance of the cache
    */
   public static AliasCacheImpl getInstance(File dictionaryPath, String clientId) throws ResourceInstantiationException {
     synchronized(instanceLock) {
@@ -175,11 +173,8 @@ public class AliasCacheImpl implements AliasLookupDictionary {
   //=========================================================================
   /**
    * Checks whether an alias can be added to the cache, honoring the
-   * caseSensitivity setting.<br>
-   * <br>
-   * The ignore list check is performed here.<br>
+   * caseSensitivity setting. The ignore list check is performed here.
    * 
-   * @param alias
    * @return whether the alias can be added
    */
   private boolean verifyAlias(String alias) {
@@ -218,7 +213,7 @@ public class AliasCacheImpl implements AliasLookupDictionary {
    * Alias cache without filling it with content. This code is separated from 
    * the data filling from the semantic repository - for class extension
    * convenience.<br>
-   * @param ignoreAliases - a String list of aliases to be ignored.
+   * @param ignoreAliases a String list of aliases to be ignored.
    */
   protected void initBlankCache(Collection<String> ignoreAliases) {
     aliasRegister = new HashRegister();
@@ -252,11 +247,8 @@ public class AliasCacheImpl implements AliasLookupDictionary {
    * It creates an empty Alias cache and then fills it with data. The data
    * is collected either from the semantic repository or from a serialization
    * source (a file). 
-   * @param ignoreAliases - a String list of aliases to be ignored.
-   * @param semRep 
-   * @param dictionaryPath 
-   * @param cacheEnabled 
-   * @throws RemoteException - on failure to access the semantic repository.
+   * @param ignoreAliases a String list of aliases to be ignored.
+   * @throws RemoteException on failure to access the semantic repository.
    */
   protected void initCache(
           Collection<String> ignoreAliases, QueryResultListener.Feed dataFeed, File dictionaryPath, boolean fileCacheEnabled) throws RemoteException {
@@ -477,11 +469,11 @@ public class AliasCacheImpl implements AliasLookupDictionary {
    * A single call to this method could result in adding several records to
    * the alias cache. This is as a result to the standard Alias enrichment
    * logic which is applied over the given as input alias string.
-   * @param instURI - the URI of the Entity instance corresponding to the
+   * @param instURI the URI of the Entity instance corresponding to the
    * Alias 
-   * @param classURI - the URI of the semantic class
-   * @param alias - the string of the alias
-   * @param primaryAccess - processing specific flag; if <b>true</b> - forces
+   * @param classURI the URI of the semantic class
+   * @param alias the string of the alias
+   * @param primaryAccess processing specific flag; if <b>true</b> - forces
    * class priority checks.
    */
   public void addAlias(String instURI, String classURI, String alias,
@@ -499,7 +491,7 @@ public class AliasCacheImpl implements AliasLookupDictionary {
 
   /** This method performs the standard alias enrichment. It covers
    * cases as variants with and without trailing punctuation. 
-   * @param alias - the original alias string.
+   * @param alias the original alias string.
    * @return array of distinct strings which are accepted as equally valid
    * representation of the related to the Alias - Entity.
    */
@@ -531,9 +523,9 @@ public class AliasCacheImpl implements AliasLookupDictionary {
 
   /** Method that implements a simple alias addition (as is) to the
    * cache structures
-   * @param instURI - the Entity instance URI
-   * @param classURI - the semantic class URI
-   * @param alias - the string of the alias
+   * @param instURI the Entity instance URI
+   * @param classURI the semantic class URI
+   * @param alias the string of the alias
    */
   private void simpleAddAlias(String instURI, String classURI,
           String alias) {
@@ -584,8 +576,8 @@ public class AliasCacheImpl implements AliasLookupDictionary {
    * Looks up for matches given an Alias string. This is useful for
    * single lookups and searches for exact matches. This means no
    * prefix/suffix variations are accepted.
-   * @param alias - the label string of the alias
-   * @return - array of matching HashedAlias instances 
+   * @param alias the label string of the alias
+   * @return array of matching HashedAlias instances 
    */
   public List<KimLookupParser.AliasWrapper> lookup(String alias) {
     ParsingFrame pfm = new ParsingFrame(alias);
@@ -708,19 +700,11 @@ public class AliasCacheImpl implements AliasLookupDictionary {
   protected boolean existsClassPriority = false;	
 
   /**
-   * TODO
-   * 
-   * <p>
    *  If current label class is 'competitive', the label is put in a Map,
    * having List
    * for all concurrent classes descending sorted by weight
    * because of small number of classes for a label, direct insert is
    * chosen in comparison with binary
-   * @param instURI
-   * @param classURI
-   * @param alias
-   * @param primaryAccess
-   * @return
    */
   private boolean checkClassPriority(String instURI, String classURI,
           final String alias, boolean primaryAccess) {
