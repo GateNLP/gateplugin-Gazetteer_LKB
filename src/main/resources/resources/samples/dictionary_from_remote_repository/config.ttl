@@ -16,7 +16,7 @@
       rep:repositoryType "openrdf:HTTPRepository" ;
 	  
 	  # This URL is a public limitted SPARQL endpoint. All queries are truncated to 10000 results.
-	  hr:repositoryURL <http://factforge.net/sparql>
+	  hr:repositoryURL <http://factforge.net/repositories/ff-news>
 	  
 	  # This URL points to the unlimitted password-protected factforge endpoint.
 	  # Ontotext partners can contact info@factforge.net to request credentials. 
