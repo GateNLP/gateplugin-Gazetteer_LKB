@@ -144,7 +144,7 @@
 		<repository>
 			<id>public</id>
 			<name>Ontotext Public Repository</name>
-			<url>http://maven.ontotext.com/content/repositories/public</url>
+			<url>https://maven.ontotext.com/content/repositories/public</url>
 			<releases>
 				<enabled>true</enabled>
 				<updatePolicy>never</updatePolicy>
